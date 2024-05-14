@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+
+<html dir="rtl" lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Filimo</title>
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./public/css/mine.css" />
+    <link rel="stylesheet" href="./public/css/output.css" />
+  </head>
+  <body class="bg-dark-200 text-white">
+    <nav class="z-50 top-0 right-0 left-0 bg-dark-900 bg-opacity-85 border-gray-200 text-sm flex flex-row md:hidden justify-between px-3 items-start w-full">
+      <div class="flex flex-wrap flex-col items-start w-6/12">
+        <a href="#" class="flex items-center mt-6">
+          <img src="/assets/web/ui/img-cN60l2HV7KQltmZRQCCIA/filimo/fa-filimo-dark-logo.svg" class="h-8" alt="filimo_logo" />
+        </a>
+        <div class="w-[440px] mt-6 overflow-x-auto">
+          <ul class="flex flex-row overflow-x-auto items-center rounded">
+            <li>
+              <a
+                href="#"
+                class="flex items-center gap-3 py-2 px-3 text-white rounded md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:text-orange-n-100"
+                aria-current="page"
+              >
+                <i class="fa-solid fa-fire text-orange-n-100"></i>
+                <span> فیلیموتور </span>
+              </a>
+            </li>
+            <li class="flex gap-4" id="mobileNav"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex items-center justify-center gap-5 mt-6">
+        <button class="bg-green-n-300 px-4 text-sm text-white font-bold rounded">خرید اشتراک</button>
+        <button class="bg-dark-50 px-3 py-2.5 text-sm text-white font-bold rounded">ورود</button>
+      </div>
+    </nav>
+    <nav class="fixed z-50 top-0 right-0 left-0 bg-dark-900 bg-opacity-85 border-gray-200 text-sm hidden md:flex items-center w-full justify-around">
+      <div class="flex flex-wrap items-center gap-5 p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="https://www.filimo.com/assets/web/ui/img-ugnSfCQdq1MdoMws3NbA/filimo/fa-filimo-dark-logo.svg" class="h-8" alt="filimo_logo" />
+        </a>
+        <button
+          data-collapse-toggle="navbar-multi-level"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-multi-level"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto">
+          <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+            <li>
+              <a href="#" class="block text-white py-2 px-3 hover:text-orange-n-100 rounded md:bg-transparent md:p-0" aria-current="page">
+                <i class="fa-solid fa-fire text-orange-n-100"></i>
+                <span> فیلیموتور </span>
+              </a>
+            </li>
+            <li class="flex gap-8" id="menu_items"></li>
+            <li>
+              <a class="block text-white py-2 px-3 hover:text-orange-n-100 rounded md:bg-transparent md:p-0" href="">
+                <i class="fa-solid fa-magnifying-glass text-sm"></i>
+                جست و جو
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex items-center justify-center gap-5">
+        <button class="bg-green-n-300 px-3 py-2 text-sm text-white font-bold rounded">خرید اشتراک</button>
+        <button class="bg-dark-50 px-3 py-2 text-sm text-white font-bold rounded">ورود</button>
+      </div>
+    </nav>
+    <section id="header" class=" relative">
+      <div class="flex items-center bg-dark-100 bg-opacity-35 z-20">
+        <div class="pt-[120%] sm:pt-[75%] md:pt-[60%] lg:pt-[37%]"></div>
+        <div class="absolute top-0 left-0 right-0 bottom-0 slider__effect"></div>
+        <div id="slide" class="image"></div>
+        <div class="flex flex-col justify-end w-full relative z-20  select-none">
+           <div class="flex flex-col justify-end w-full select-none ">
+            <p class="text-sm text-orange-n-100 font-bold text-center mx-auto mb-4">با فیلیمو بی وقفه فیلم ببین</p>
+            <h1 class="md:text-3xl text-xl text-white font-bold text-center mb-10">کنترل همیشه دست توست!</h1>
+            <ul class="flex md:flex-row flex-col gap-5 md:gap-0 justify-around mb-16 text-font-100 text-sm">
+              <li>
+                <i class="fa-solid fa-check bg-green-n-300 rounded-full p-0.5 text-sm inline-flex w-5 h-5 justify-center items-center text-green-500 bg-opacity-50"></i>
+                90 هزار اپیزود فیلم و سریال برای تماشا داری
+              </li>
+              <li>
+                <i class="fa-solid fa-check bg-green-n-300 rounded-full p-0.5 text-sm inline-flex w-5 h-5 justify-center items-center text-green-500 bg-opacity-50"></i>
+                می تونی دانلود کنی بعد بدونه اینترنت تماشا کنی
+              </li>
+              <li>
+                <i class="fa-solid fa-check bg-green-n-300 rounded-full p-0.5 text-sm inline-flex w-5 h-5 justify-center items-center text-green-500 bg-opacity-50"></i>
+                می‌تونی یک عضو، مخصوص تماشای کودک بسازی
+              </li>
+            </ul>
+            <button class="p-5 bg-green-n-300 md:w-3/12 w-8/12 rounded  mx-auto text-white font-bold text-sm">
+              <i class="fa-solid fa-ticket"></i>
+              خرید اشتراک و تماشا
+            </button>
+            <p class="text-center mt-2 text-sm text-font-100">
+              <i class="fa-solid fa-gift"></i>
+              تخفیف ویژه برای کاربران جدید
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="popular" class="relative">
+      <div class="flex gap-5 px-10">
+        <h1 class="font-bold text-2xl">محبوب ترین های فیلیمو</h1>
+        <div class="border border-gray-500 rounded-xl text-center overflow-hidden flex justify-around gap-0.5">
+          <button id="serial__btn" class="w-16 h-8 ">سریال</button>
+          <button id="movie__btn" class="w-16 h-8 rounded-full">فیلم</button>
+        </div>
+      </div>
+      <div class=" overflow-auto px-4 relative">
+        <div class="absolute left-0 right-0 top-0 bottom-0 slider__effect z-30"></div>
+        <div id="popular_movies" class="flex overflow-auto min-w-[900px] flex-row mt-10 mx-auto md:gap-10 gap-2 justify-center relative z-20">
+        </div>
+      </div>
+      <div id="popular_movies_details" class="flex md:max-w-7xl mt-10 mx-auto md:gap-10 gap-2 justify-between relative px-3 md:px-0 z-20"></div>
+    </section>
+    <section id="how_to_watch">
+      <div class="flex md:flex-row flex-wrap md:flex-nowrap mt-16 max-w-6xl mx-auto justify-around items-center">
+        <img class="md:mb-0 mb-6" src="./public/images/deviceYaghi.webp" alt="" />
+        <div class="flex flex-col justify-center md:px-0 px-3">
+          <h2 class="font-bold text-2xl">تماشای فیلیمو با همه ی دستگاه ها</h2>
+          <p class="my-5 text-font-100">می‌توانید فیلیمو را به صورت هم‌زمان روی 3 دستگاه مختلف مثل موبایل، تبلت، لپ‌تاپ، تلویزیون و... تماشا کنید.</p>
+          <ul class="text-font-100">
+            <li class="flex gap-2 items-start mb-10">
+              <i class="fa-solid fa-laptop mt-1.5"></i>
+              <div class="flex justify-center flex-col gap-1 text-font-100">
+                <p class="font-bold">کامپیوتر و لب تاب</p>
+                <p class="text-sm">windows PC - MacOS - Chorom OS</p>
+              </div>
+            </li>
+            <li class="flex gap-2 items-start mb-10">
+              <i class="fa-solid fa-mobile mt-1.5"></i>
+              <div class="flex flex-col gap-1 text-font-100">
+                <p class="font-bold">موبایل و تبلت</p>
+                <p class="text-sm">Android Phone & Tablets - Iphone and Ipad - Amazon Fire Tablets</p>
+              </div>
+            </li>
+            <li class="flex gap-2 items-start mb-10">
+              <i class="fa-solid fa-gamepad mt-1.5"></i>
+              <div class="flex flex-col gap-1 text-font-100">
+                <p class="font-bold">کنسول‌های بازی (Browser)</p>
+                <p class="text-sm">Xbox Series S - Xbox Seris X - PS5 - PS4</p>
+              </div>
+            </li>
+            <li>
+              <button class="bg-green-n-300 rounded px-2 py-2 mx-auto text-white font-bold text-sm">
+                <i class="fa-solid fa-ticket"></i>
+                خرید اشتراک و تماشا
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="watch" class="bg-dark-900">
+      <div class="flex flex-wrap flex-col md:flex-row md:mt-16 mt-10 items-center justify-between">
+        <div class="flex justify-center flex-col md:w-4/12 md:px-0 px-3 mx-auto h-full my-16">
+          <h2 class="font-bold">چطور با تلویزیون، فیلیمو تماشا کنم؟</h2>
+          <p class="text-justify text-font-100 text-sm mt-8">
+            ما برای راحتی شما و تماشای فیلیمو روی تلویزیون‌های مختلف 6 روش را فراهم کردیم. هرکدام از این 6 روش یک ویدیو آموزشی دارند که می‌توانید از لینک زیر، آن‌ها را تماشا کنید و روشی که با تلویزیون
+            شما سازگار است را انتخاب کنید.
+          </p>
+          <ul class="text-font-100 mt-20">
+            <li class="flex gap-2 items-start mb-10">
+              <i class="fa-solid fa-laptop mt-1.5"></i>
+              <div class="flex justify-center flex-col gap-1 text-font-100">
+                <p class="font-bold">کامپیوتر و لب تاب</p>
+                <p class="text-sm">windows PC - MacOS - Chorom OS</p>
+              </div>
+            </li>
+            <li class="flex gap-2 items-start mb-10">
+              <i class="fa-solid fa-gamepad mt-1.5"></i>
+              <div class="flex flex-col gap-1 text-font-100">
+                <p class="font-bold">کنسول‌های بازی (Browser)</p>
+                <p class="text-sm">Xbox Series S - Xbox Seris X - PS5 - PS4</p>
+              </div>
+            </li>
+            <li class="mt-20">
+              <button class="flex items-center gap-2 text-sm px-5 font-bold text-white py-2 bg-dark-50 rounded">
+                <span> ویدیوهای آموزشی تماشا با تلویزیون </span>
+                <i class="fa-solid fa-chevron-left mt-1.5"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <img class="md:w-6/12" src="./public/images/device2.webp" alt="" />
+      </div>
+    </section>
+    <section id="free_movies">
+      <div class="max-w-7xl mx-auto md:mt-16 mt-10">
+        <h3 class="text-xl font-bold mb-10">فیلم های رایگان</h3>
+        <div class="swiper free_movies">
+          <!-- <div class="absolute top-0 left-0 right-0 bottom-0 z-10 slider__effect"></div> -->
+          <div class="swiper-wrapper overflow-auto" >
+            <!-- <div class="absolute left-0 top-0 bottom-0 right-0 px-8 flex justify-between items-center">
+              <button id="right__img" class="rounded-full  bg-red-500 p-2"> 
+                right
+              </button>
+              <button id="left__img" class="rounded-full z-30 bg-red-500 p-2"> 
+                left 
+              </button>
+            </div> -->
+            <div class="absolute top-0 left-0 right-0 bottom-0  slider__effect"></div>
+            <div id="free_movies_container" class="swiper-wrapper px-4" >
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="kids" class=" w-full h-full">
+      <div class="flex md:flex-row flex-col-reverse md:px-0 px-3 md:mt-20 mt-10 max-w-7xl mx-auto justify-center md:gap-20 gap-5 relative z-20">
+        <img class="md:w-1/3" src="./public/images/bg-kids.png" alt="" />
+        <div class="flex flex-col md:w-1/3 justify-center">
+          <h3 class="text-xl font-bold mb-5">دنیایی متنوع از فیلم و کارتون‌های کودکانه</h3>
+          <p class="text-justify text-font-100 w-full">
+            ساخت فیلیمو کودک این امکان را می‌دهد که با انتخاب سن فرزندتان، یک فضای امن برای تماشای کودک بسازید؛ یعنی محتوای مخصوص سن خودش را ببیند و به بقیه فیلم و سریال‌ها دسترسی نداشته‌باشد.
+          </p>
+          <ul class="flex gap-5 mt-5">
+            <li>
+              <button class="px-4 py-2 bg-white text-black font-bold text-sm rounded">فیلیمو کودک بساز</button>
+            </li>
+            <li>
+              <button class="px-4 py-2 bg-white text-black font-bold text-sm rounded">تماشای فیلیمو کودک</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="relative" id="cenema">
+      <img
+        class="absolute w-full h-full object-cover top-0 right-0 left-0 bottom-0 z-10"
+        src="https://www.filimo.com/assets/web/ui/img-ugnSfCQdq1MdoMws3NbA/campaigns/nosub-v_new/bg-cinama.png"
+        alt=""
+      />
+      <div class="max-w-7xl mx-auto relative z-20">
+        <h3 class="text-center md:mt-0 pt-10 font-bold text-xl">سینما آنلاین فیلیمو</h3>
+        <ul class="flex md:flex-row flex-col md:gap-0 gap-5 md:px-0 px-3 justify-around my-8 text-font-100 text-sm">
+          <li>
+            <i class="fa-solid fa-check bg-green-n-300 rounded-full me-2 p-0.5 text-sm inline-flex w-5 h-5 justify-center items-center text-green-500 bg-opacity-50"></i>
+            فیلم‌های روز سینمای ایران
+          </li>
+          <li>
+            <i class="fa-solid fa-check bg-green-n-300 rounded-full p-0.5 me-2 text-sm inline-flex w-5 h-5 justify-center items-center text-green-500 bg-opacity-50"></i>
+            ۸ ساعت زمان برای مشاهده فیلم در هر کجا
+          </li>
+          <li>
+            <i class="fa-solid fa-check bg-green-n-300 rounded-full p-0.5 me-2 text-sm inline-flex w-5 h-5 justify-center items-center text-green-500 bg-opacity-50"></i>
+            خرید یک بلیت برای تماشا همراه با همه خانواده
+          </li>
+        </ul>
+        <div class="cenema max-h-[500px] overflow-hidden overflow-y-auto flex justify-center mt-10 gap-10 flex-wrap"></div>
+      </div>
+    </section>
+    <section id="comments">
+      <div class="max-w-7xl mx-auto mt-10 overflow-hidden py-16">
+        <div class="swiper overflow-visible relative comment_swiper">
+          <div class="swiper-wrapper overflow-y-visible" id="comment_swiper">
+            <div class="swiper-slide w-full items-center h-[190px]">
+              <div class="flex flex-col border border-gray-500 w-full h-[190px] rounded-xl shadow bg-dark-150 p-2">
+                <div class="flex justify-between gap-5">
+                  <div class="flex justify-between gap-3 items-center">
+                    <img src="https://www.filimo.com/assets/web/ui/img-ugnSfCQdq1MdoMws3NbA/campaigns/big-screen_v2/1.png" alt="" />
+                    <span class="text-font-100"> user name </span>
+                  </div>
+                  <div>
+                    <img src="https://www.filimo.com/assets/web/ui/img-ugnSfCQdq1MdoMws3NbA/campaigns/big-screen_v2/virgol.png" alt="" />
+                  </div>
+                </div>
+                <p class="mt-8 text-sm">فیلیمو عالی من از فیلیمو رازی هستم❤❤😍🤩😘❤🍓</p>
+              </div>
+            </div>
+            <div class="swiper-slide w-full items-center h-[190px]">
+              <div class="flex flex-col border border-gray-500 w-full h-[190px] rounded-xl shadow bg-dark-150 p-2">
+                <div class="flex justify-between gap-5">
+                  <div class="flex justify-between gap-3 items-center">
+                    <img src="https://www.filimo.com/assets/web/ui/img-ugnSfCQdq1MdoMws3NbA/campaigns/big-screen_v2/1.png" alt="" />
+                    <span class="text-font-100"> user name </span>
+                  </div>
+                  <div>
+                    <img src="https://www.filimo.com/assets/web/ui/img-ugnSfCQdq1MdoMws3NbA/campaigns/big-screen_v2/virgol.png" alt="" />
+                  </div>
+                </div>
+                <p class="mt-8 text-sm">خیلی خوب بود من راحت فیِلمی را که دوست داشتمو دانلود میکردم وغیر از دانلود راحت میتونستم فیلموببینم درهرحال راضیم ازاین برنامه.</p>
+              </div>
+            </div>
+            <div class="swiper-slide w-full items-center h-[190px]">
+              <div class="flex flex-col border border-gray-500 w-full h-[190px] rounded-xl shadow bg-dark-150 p-2">
+                <div class="flex justify-between gap-5">
+                  <div class="flex justify-between gap-3 items-center">
+                    <img src="https://www.filimo.com/assets/web/ui/img-ugnSfCQdq1MdoMws3NbA/campaigns/big-screen_v2/1.png" alt="" />
+                    <span class="text-font-100"> user name </span>
+                  </div>
+                  <div>
+                    <img src="https://www.filimo.com/assets/web/ui/img-ugnSfCQdq1MdoMws3NbA/campaigns/big-screen_v2/virgol.png" alt="" />
+                  </div>
+                </div>
+                <p class="mt-8 text-sm">فیلیمو عالی من از فیلیمو رازی هستم❤❤😍🤩😘❤🍓</p>
+              </div>
+            </div>
+            <div class="swiper-slide w-full items-center h-[190px]">
+              <div class="flex flex-col border border-gray-500 w-full h-[190px] rounded-xl shadow bg-dark-150 p-2">
+                <div class="flex justify-between gap-5">
+                  <div class="flex justify-between gap-3 items-center">
+                    <img src="https://www.filimo.com/assets/web/ui/img-ugnSfCQdq1MdoMws3NbA/campaigns/big-screen_v2/1.png" alt="" />
+                    <span class="text-font-100"> user name </span>
+                  </div>
+                  <div>
+                    <img src="https://www.filimo.com/assets/web/ui/img-ugnSfCQdq1MdoMws3NbA/campaigns/big-screen_v2/virgol.png" alt="" />
+                  </div>
+                </div>
+                <p class="mt-8 text-sm">خیلی خوب بود من راحت فیِلمی را که دوست داشتمو دانلود میکردم وغیر از دانلود راحت میتونستم فیلموببینم درهرحال راضیم ازاین برنامه.</p>
+              </div>
+            </div>
+            <div class="swiper-slide w-full items-center h-[190px]">
+              <div class="flex flex-col border border-gray-500 w-full h-[190px] rounded-xl shadow bg-dark-150 p-2">
+                <div class="flex justify-between gap-5">
+                  <div class="flex justify-between gap-3 items-center">
+                    <img src="https://www.filimo.com/assets/web/ui/img-ugnSfCQdq1MdoMws3NbA/campaigns/big-screen_v2/1.png" alt="" />
+                    <span class="text-font-100"> user name </span>
+                  </div>
+                  <div>
+                    <img src="https://www.filimo.com/assets/web/ui/img-ugnSfCQdq1MdoMws3NbA/campaigns/big-screen_v2/virgol.png" alt="" />
+                  </div>
+                </div>
+                <p class="mt-8 text-sm">فیلیمو عالی من از فیلیمو رازی هستم❤❤😍🤩😘❤🍓</p>
+              </div>
+            </div>
+            <div class="swiper-slide w-full items-center h-[190px]">
+              <div class="flex flex-col border border-gray-500 w-full h-[190px] rounded-xl shadow bg-dark-150 p-2">
+                <div class="flex justify-between gap-5">
+                  <div class="flex justify-between gap-3 items-center">
+                    <img src="https://www.filimo.com/assets/web/ui/img-ugnSfCQdq1MdoMws3NbA/campaigns/big-screen_v2/1.png" alt="" />
+                    <span class="text-font-100"> user name </span>
+                  </div>
+                  <div>
+                    <img src="https://www.filimo.com/assets/web/ui/img-ugnSfCQdq1MdoMws3NbA/campaigns/big-screen_v2/virgol.png" alt="" />
+                  </div>
+                </div>
+                <p class="mt-8 text-sm">خیلی خوب بود من راحت فیِلمی را که دوست داشتمو دانلود میکردم وغیر از دانلود راحت میتونستم فیلموببینم درهرحال راضیم ازاین برنامه.</p>
+              </div>
+            </div>
+            <div class="swiper-slide w-full items-center h-[190px]">
+              <div class="flex flex-col border border-gray-500 w-full h-[190px] rounded-xl shadow bg-dark-150 p-2">
+                <div class="flex justify-between gap-5">
+                  <div class="flex justify-between gap-3 items-center">
+                    <img src="https://www.filimo.com/assets/web/ui/img-ugnSfCQdq1MdoMws3NbA/campaigns/big-screen_v2/1.png" alt="" />
+                    <span class="text-font-100"> user name </span>
+                  </div>
+                  <div>
+                    <img src="https://www.filimo.com/assets/web/ui/img-ugnSfCQdq1MdoMws3NbA/campaigns/big-screen_v2/virgol.png" alt="" />
+                  </div>
+                </div>
+                <p class="mt-8 text-sm">فیلیمو عالی من از فیلیمو رازی هستم❤❤😍🤩😘❤🍓</p>
+              </div>
+            </div>
+            <div class="swiper-slide w-full items-center h-[190px]">
+              <div class="flex flex-col border border-gray-500 w-full h-[190px] rounded-xl shadow bg-dark-150 p-2">
+                <div class="flex justify-between gap-5">
+                  <div class="flex justify-between gap-3 items-center">
+                    <img src="https://www.filimo.com/assets/web/ui/img-ugnSfCQdq1MdoMws3NbA/campaigns/big-screen_v2/1.png" alt="" />
+                    <span class="text-font-100"> user name </span>
+                  </div>
+                  <div>
+                    <img src="https://www.filimo.com/assets/web/ui/img-ugnSfCQdq1MdoMws3NbA/campaigns/big-screen_v2/virgol.png" alt="" />
+                  </div>
+                </div>
+                <p class="mt-8 text-sm">خیلی خوب بود من راحت فیِلمی را که دوست داشتمو دانلود میکردم وغیر از دانلود راحت میتونستم فیلموببینم درهرحال راضیم ازاین برنامه.</p>
+              </div>
+            </div>
+          </div>
+          <div class="absolute w-[120px] mx-0.5 bg-red-500 -top-7 left-5 me-auto">
+            <div class="swiper-button-next text-white rounded-full bg-dark-900 w-12 h-12"></div>
+            <div class="swiper-button-prev text-white absolute left-0 rounded-full bg-dark-900 w-12 h-12"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="faq" class="bg-dark-100 py-24">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center">
+          <h3 class="font-bold">سوالات متداول</h3>
+          <p class="text-sm text-font-100 mt-4">سوال شایع دیگر کاربران شاید برای شما پیش امده باشد</p>
+        </div>
+        <div class="mt-16" id="faqItems">
+          <div class="flex mb-5 bg-dark-150 shadow-2xl flex-col gap-10 rounded-xl max-w-2xl mx-auto h-fit overflow-hidden border border-gray-500 p-3 items-center">
+            <div class="flex justify-between w-full h-full items-center">
+              <h1>آیا می‌توانم فیلم‌های موجود در فیلیمو را دانلود کنم؟</h1>
+              <i data-id="1" class="fa-solid transition duration-75 fa-xmark text-orange-n-100 rotate-45"></i>
+            </div>
+            <p data-p="1" class="text-font-100 transition duration-75 text-sm text-justify h-0 opacity-0 hidden">
+              بله، شما می‌توانید همه فیلم‌ و سریال‌های فیلیمو را داخل خود اپلیکیشن فیلیمو دانلود کنید و برای زمان‌هایی که اینترنت ندارید یا در سفر، هواپیما و قطار آ‌ن‌ها را تماشا کنید. برای دانلود هم
+              از طریق رایانه و هم از طریق خود اپلیکیشن فیلیمو می‌توانید اقدام‌کنید. برای جزییات بیشتر می‌توانید فیلم‌های آموزشی مربوط به دانلود از طریق سایت و دانلود از طریق اپلیکیشن را تماشا کنید.
+            </p>
+          </div>
+          <div class="flex mb-5 bg-dark-150 shadow-2xl flex-col gap-10 rounded-xl max-w-2xl mx-auto h-fit overflow-hidden border border-gray-500 p-3 items-center">
+            <div class="flex justify-between w-full h-full items-center">
+              <h1>آیا می‌توانم فیلم‌های موجود در فیلیمو را دانلود کنم؟</h1>
+              <i data-id="2" class="fa-solid transition duration-75 fa-xmark text-orange-n-100 rotate-45"></i>
+            </div>
+            <p data-p="2" class="text-font-100 transition duration-75 text-sm text-justify h-0 opacity-0 hidden">
+              بله، شما می‌توانید همه فیلم‌ و سریال‌های فیلیمو را داخل خود اپلیکیشن فیلیمو دانلود کنید و برای زمان‌هایی که اینترنت ندارید یا در سفر، هواپیما و قطار آ‌ن‌ها را تماشا کنید. برای دانلود هم
+              از طریق رایانه و هم از طریق خود اپلیکیشن فیلیمو می‌توانید اقدام‌کنید. برای جزییات بیشتر می‌توانید فیلم‌های آموزشی مربوط به دانلود از طریق سایت و دانلود از طریق اپلیکیشن را تماشا کنید.
+            </p>
+          </div>
+          <div class="flex mb-5 bg-dark-150 shadow-2xl flex-col gap-10 rounded-xl max-w-2xl mx-auto h-fit overflow-hidden border border-gray-500 p-3 items-center">
+            <div class="flex justify-between w-full h-full items-center">
+              <h1>آیا می‌توانم فیلم‌های موجود در فیلیمو را دانلود کنم؟</h1>
+              <i data-id="2" class="fa-solid transition duration-75 fa-xmark text-orange-n-100 rotate-45"></i>
+            </div>
+            <p data-p="2" class="text-font-100 transition duration-75 text-sm text-justify h-0 opacity-0 hidden">
+              بله، شما می‌توانید همه فیلم‌ و سریال‌های فیلیمو را داخل خود اپلیکیشن فیلیمو دانلود کنید و برای زمان‌هایی که اینترنت ندارید یا در سفر، هواپیما و قطار آ‌ن‌ها را تماشا کنید. برای دانلود هم
+              از طریق رایانه و هم از طریق خود اپلیکیشن فیلیمو می‌توانید اقدام‌کنید. برای جزییات بیشتر می‌توانید فیلم‌های آموزشی مربوط به دانلود از طریق سایت و دانلود از طریق اپلیکیشن را تماشا کنید.
+            </p>
+          </div>
+          <div class="flex mb-5 bg-dark-150 shadow-2xl flex-col gap-10 rounded-xl max-w-2xl mx-auto h-fit overflow-hidden border border-gray-500 p-3 items-center">
+            <div class="flex justify-between w-full h-full items-center">
+              <h1>آیا می‌توانم فیلم‌های موجود در فیلیمو را دانلود کنم؟</h1>
+              <i data-id="2" class="fa-solid transition duration-75 fa-xmark text-orange-n-100 rotate-45"></i>
+            </div>
+            <p data-p="2" class="text-font-100 transition duration-75 text-sm text-justify h-0 opacity-0 hidden">
+              بله، شما می‌توانید همه فیلم‌ و سریال‌های فیلیمو را داخل خود اپلیکیشن فیلیمو دانلود کنید و برای زمان‌هایی که اینترنت ندارید یا در سفر، هواپیما و قطار آ‌ن‌ها را تماشا کنید. برای دانلود هم
+              از طریق رایانه و هم از طریق خود اپلیکیشن فیلیمو می‌توانید اقدام‌کنید. برای جزییات بیشتر می‌توانید فیلم‌های آموزشی مربوط به دانلود از طریق سایت و دانلود از طریق اپلیکیشن را تماشا کنید.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="green-gradiant h-fit">
+      <div class="max-w-7xl mx-auto py-16">
+        <h1 class="text-4xl font-bold text-center">فیلیمو</h1>
+        <ul class="flex md:flex-row flex-col md:gap-0 gap-5 md:px-0 px-3 justify-around mt-16 text-font-100 text-sm">
+          <li>
+            <i class="fa-solid fa-check bg-green-n-300 rounded-full p-0.5 text-sm inline-flex w-5 h-5 justify-center items-center text-green-500 bg-opacity-50"></i>
+            هزاران فیلم و سریال خارجی (دوبله و زیرنویس)
+          </li>
+          <li>
+            <i class="fa-solid fa-check bg-green-n-300 rounded-full p-0.5 text-sm inline-flex w-5 h-5 justify-center items-center text-green-500 bg-opacity-50"></i>
+            هزاران انیمیشن و کارتون برای کودکان
+          </li>
+          <li>
+            <i class="fa-solid fa-check bg-green-n-300 rounded-full p-0.5 text-sm inline-flex w-5 h-5 justify-center items-center text-green-500 bg-opacity-50"></i>
+            پشتیبانی 24 ساعته برای راهنمایی شما
+          </li>
+        </ul>
+        <button class="bg-green-n-300 md:w-3/12 w-8/12 py-4 mt-16 mx-auto block text-sm text-white font-bold rounded">خرید اشتراک</button>
+      </div>
+    </footer>
+    <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="../node_modules/axios/dist/axios.min.js"></script>
+    <script type="module" src="./public/js/main.js"></script>
+    <script>
+      /**
+       * Axios Configuration
+       */
+      const baseURL = "https://movie.devphonix.com/public/api/";
+      const AxiosClient = axios.create({
+        baseURL: baseURL,
+      });
+
+      /**
+       * Fetch Data Function
+       */
+      async function fetchData() {
+        try {
+          const response = await AxiosClient.get("v1/web");
+          if (response.data.success) {
+            return response.data.data;
+          }
+        } catch (error) {
+          console.error("Error fetching data:", error);
+        }
+        return null;
+      }
+
+      /**
+       * Load Data on Window Load
+       */
+      window.addEventListener("load", async () => {
+        const data = await fetchData();
+        console.log(data);
+        if (data) {
+          window.webData = data;
+          createNavigationMenu(data?.categories);
+          createMobileNavigationMenu(data?.categories);
+          createSlider(data?.slider);
+          createPopularMovies(data?.popular_movies);
+          createFreeMovies(data?.free_movies);
+          createCenema(data?.cenema);
+        } else {
+          console.error("Failed to fetch data.");
+        }
+      });
+
+      function createNavigationMenu(data) {
+        const navList = document.querySelector("#menu_items");
+        data.forEach((item) => {
+          const li = document.createElement("li");
+          if (item.children.length > 0) {
+            const button = document.createElement("button");
+            const span = document.createElement("span");
+            span.textContent = item.title;
+            button.dataset.dropdownToggle = "dropDown" + item.id;
+            button.dataset.dropdownTrigger = "hover";
+            button.classList.add(
+              "flex",
+              "gap-2",
+              "items-center",
+              "justify-between",
+              "w-full",
+              "py-2",
+              "px-3",
+              "text-white",
+              "hover:text-amber-500",
+              "hover:bg-gray-100",
+              "md:hover:bg-transparent",
+              "md:border-0",
+              "md:p-0",
+              "md:w-auto",
+              "dark:text-white",
+              "md:dark:hover:text-blue-500",
+              "dark:focus:text-white",
+              "dark:hover:bg-gray-700",
+              "md:dark:hover:bg-transparent"
+            );
+            li.appendChild(button);
+            const icon = document.createElement("i");
+            icon.classList.add("fa-solid", "fa-angle-down", "text-white");
+            icon.innerHTML = "";
+            button.appendChild(span);
+            button.appendChild(icon);
+            li.classList.add("relative");
+            const div = document.createElement("div");
+            div.id = "dropDown" + item.id;
+            div.classList.add("z-10", "hidden", "absolute", "top-full", "font-normal", "bg-white", "divide-y", "divide-gray-100", "rounded-lg", "shadow", "w-44");
+            const ul = document.createElement("ul");
+            ul.classList.add("py-2", "text-sm", "text-white", "bg-dark-200", "w-full", "flex", "flex-wrap", "gap-.5", "text-center", "shadow-xl");
+            item.children.forEach((child) => {
+              const childLi = document.createElement("li");
+              const childA = document.createElement("a");
+              childA.classList.add("hover:text-amber-500");
+              childA.href = "#";
+              childA.textContent = child.title;
+              childA.classList.add("block", "px-4", "py-2");
+              childLi.appendChild(childA);
+              ul.appendChild(childLi);
+            });
+            div.appendChild(ul);
+            li.appendChild(div);
+
+            // Add event listeners to toggle dropdown visibility
+            button.addEventListener("mouseenter", () => {
+              div.classList.remove("hidden");
+            });
+            button.addEventListener("mouseleave", () => {
+              div.classList.add("hidden");
+            });
+            div.addEventListener("mouseenter", () => {
+              div.classList.remove("hidden");
+            });
+            div.addEventListener("mouseleave", () => {
+              div.classList.add("hidden");
+            });
+          } else {
+            const a = document.createElement("a");
+            a.href = "#";
+            a.textContent = item.title;
+            a.classList.add(
+              "block",
+              "py-2",
+              "px-3",
+              "text-white",
+              "rounded",
+              "hover:text-amber-500",
+              "md:p-0",
+              "md:w-auto",
+              "dark:text-white",
+              "md:dark:hover:text-blue-500",
+              "dark:hover:bg-gray-700",
+              "dark:hover:text-white",
+              "md:dark:hover:bg-transparent"
+            );
+            li.appendChild(a);
+          }
+          navList.appendChild(li);
+        });
+      }
+      function createMobileNavigationMenu(data) {
+        const navList = document.querySelector("#mobileNav");
+        data.forEach((item) => {
+          const li = document.createElement("li");
+          if (item.children.length > 0) {
+            const button = document.createElement("button");
+            const span = document.createElement("span");
+            span.textContent = item.title;
+            button.dataset.dropdownToggle = "dropDown" + item.id;
+            button.dataset.dropdownTrigger = "hover";
+            button.classList.add(
+              "flex",
+              "gap-2",
+              "items-center",
+              "justify-between",
+              "w-full",
+              "py-2",
+              "px-3",
+              "text-white",
+              "hover:text-amber-500",
+              "hover:bg-gray-100",
+              "md:hover:bg-transparent",
+              "md:border-0",
+              "md:p-0",
+              "md:w-auto",
+              "dark:text-white",
+              "md:dark:hover:text-blue-500",
+              "dark:focus:text-white",
+              "dark:hover:bg-gray-700",
+              "md:dark:hover:bg-transparent"
+            );
+            li.appendChild(button);
+            const icon = document.createElement("i");
+            icon.classList.add("fa-solid", "fa-angle-down", "text-white");
+            icon.innerHTML = "";
+            button.appendChild(span);
+            button.appendChild(icon);
+            li.classList.add("relative");
+            const div = document.createElement("div");
+            div.id = "dropDown" + item.id;
+            div.classList.add("z-10", "hidden", "absolute", "top-full", "font-normal", "bg-white", "divide-y", "divide-gray-100", "rounded-lg", "shadow", "w-44");
+            const ul = document.createElement("ul");
+            ul.classList.add("py-2", "text-sm", "text-white", "bg-dark-200", "w-full", "flex", "flex-wrap", "gap-.5", "text-center", "shadow-xl");
+            item.children.forEach((child) => {
+              const childLi = document.createElement("li");
+              const childA = document.createElement("a");
+              childA.classList.add("hover:text-amber-500");
+              childA.href = "#";
+              childA.textContent = child.title;
+              childA.classList.add("block", "px-4", "py-2");
+              childLi.appendChild(childA);
+              ul.appendChild(childLi);
+            });
+            div.appendChild(ul);
+            li.appendChild(div);
+
+            // Add event listeners to toggle dropdown visibility
+            button.addEventListener("mouseenter", () => {
+              div.classList.remove("hidden");
+            });
+            button.addEventListener("mouseleave", () => {
+              div.classList.add("hidden");
+            });
+            div.addEventListener("mouseenter", () => {
+              div.classList.remove("hidden");
+            });
+            div.addEventListener("mouseleave", () => {
+              div.classList.add("hidden");
+            });
+          } else {
+            const a = document.createElement("a");
+            a.href = "#";
+            a.textContent = item.title;
+            a.classList.add(
+              "block",
+              "py-2",
+              "px-3",
+              "text-white",
+              "rounded",
+              "hover:text-amber-500",
+              "md:p-0",
+              "md:w-auto",
+              "dark:text-white",
+              "md:dark:hover:text-blue-500",
+              "dark:hover:bg-gray-700",
+              "dark:hover:text-white",
+              "md:dark:hover:bg-transparent"
+            );
+            li.appendChild(a);
+          }
+          navList.appendChild(li);
+        });
+      }
+
+      var swiper = new Swiper(".main-swiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true,
+        },
+        draggable: false,
+        allowTouchMove: false,
+      });
+      var swiper = new Swiper(".comment_swiper", {
+        slidesPerView: 3,
+        spaceBetween: 10,
+        autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      const getImageWidth = (imageName) => {
+        const regex = /(\d+)_(\d+)\.webp$/;
+        return imageName?.map((url) => {
+          const match = url.match(regex);
+          return `${url} ${match[1]}w `;
+        });
+      };
+
+      function createSlider(data) {
+        const slider = document.querySelector("#main_slider");
+        data.forEach((item, index) => {
+          const div = document.createElement("div");
+          div.classList.add("swiper-slide", "h-screen");
+          const img = document.createElement("img");
+          img.src = item.image.responsive_images.svg;
+          img.srcset = getImageWidth(item.image.responsive_images.urls);
+          img.classList.add("w-full", "object-cover", "h-full");
+          slider.appendChild(div);
+          div.appendChild(img);
+        });
+      }
+
+      function setActive(item) {
+        document.querySelectorAll("#popular_movies div").forEach((div) => {
+          div.classList.remove("border", "transform", "scale-110", "p-2", "transition", "duration-75");
+        });
+        document.querySelector(`#popular_movies div[data-id="${item.id}"]`).classList.add("border", "transform", "scale-110", "p-2", "transition", "duration-75");
+        const detailsContainer = document.querySelector("#popular_movies_details");
+        while (detailsContainer.firstChild) {
+          detailsContainer.removeChild(detailsContainer.firstChild);
+        }
+        const div = document.createElement("div");
+        div.classList.add("w-full", "relative");
+        const h2 = document.createElement("h2");
+        h2.textContent = item.title;
+        h2.classList.add("font-bold");
+        const h3 = document.createElement("h3");
+        h3.textContent = "کارگردان: " + item.director.name + item.director.last_name;
+        h3.classList.add("mt-10", "mb-5", "text-sm", "text-font-100");
+        const ul = document.createElement("ul");
+        ul.classList.add("mt-5", "text-font-100");
+        item.categories.forEach((category) => {
+          const li = document.createElement("li");
+          li.textContent = category.title;
+          li.classList.add("bg-dark-50", "w-fit", "p-1", "rounded-full", "text-small");
+          ul.appendChild(li);
+        });
+        const p = document.createElement("p");
+        p.textContent = item.description;
+        p.classList.add("mt-3", "text-sm");
+        const swiperContainer = document.createElement("div");
+        swiperContainer.classList.add("swiper", "episodes", "mt-20", "mb-10");
+        const swiperWrapper = document.createElement("div");
+        swiperWrapper.classList.add("swiper-wrapper");
+        item.episodes.forEach((data) => {
+          const swiperSlide = document.createElement("div");
+          swiperSlide.classList.add("swiper-slide");
+          const box = document.createElement("div");
+          box.classList.add("w-full", "overflow-hidden", "rounded-xl");
+          box.style.height = "150px";
+          const img = document.createElement("img");
+          img.classList.add("w-full", "object-cover", "h-3/4");
+          if (!data.free) {
+            img.classList.add("blur-sm");
+            const lock = document.createElement("i");
+            lock.classList.add("fa-solid", "fa-lock", "absolute", "left-0", "right-0", "top-0", "bottom-0", "flex", "items-center", "justify-center", "z-10", "text-xl");
+            box.classList.add("relative");
+            box.appendChild(lock);
+          }
+          img.src = data.image.responsive_images.svg;
+          img.srcset = getImageWidth(data.image.responsive_images.urls);
+          const title = document.createElement("p");
+          title.textContent = data.title;
+          title.classList.add("mt-2");
+          box.appendChild(img);
+          box.appendChild(title);
+          swiperSlide.appendChild(box);
+          swiperWrapper.appendChild(swiperSlide);
+        });
+        swiperContainer.appendChild(swiperWrapper);
+        const banner = document.createElement("img");
+        banner.src = item.banner.responsive_images.svg;
+        banner.srcset = getImageWidth(item.banner.responsive_images.urls);
+        banner.classList.add("absolute", "top-0", "bottom-0", "right-0", "left-0", "object-cover", "w-full", "h-full");
+        setTimeout(() => {
+          var swiper = new Swiper(".episodes", {
+            slidesPerView: 4,
+            spaceBetween: 10,
+            breakpoints: {
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 4,
+                spaceBetween: 50,
+              },
+            },
+          });
+        }, 600);
+        const parent = document.querySelector("#popular").appendChild(banner);
+        div.appendChild(h2);
+        div.appendChild(h3);
+        div.appendChild(ul);
+        div.appendChild(p);
+        div.appendChild(swiperContainer);
+        detailsContainer.appendChild(div);
+      }
+
+      function createPopularMovies(data) {
+        const slider = document.querySelector("#popular_movies");
+        webData.popular_movies.forEach((item, index) => {
+          if (index < 6) {
+            const div = document.createElement("div");
+            div.classList.add("w-fit", "rounded", "overflow-hidden");
+            div.dataset.id = item.id;
+            div.addEventListener("click", () => setActive(item));
+            if (index === 0) {
+              setTimeout(() => {
+                div.click();
+              }, 600);
+            }
+            const img = document.createElement("img");
+            img.src = item.cover.responsive_images.svg;
+            img.srcset = getImageWidth(item.cover.responsive_images.urls);
+            img.classList.add("w-full", "object-cover", "h-full");
+            slider.appendChild(div);
+            div.appendChild(img);
+          }
+        });
+      }
+
+      function createFreeMovies(data) {
+        const freeMovieContainer = document.querySelector("#free_movies_container");
+        const next = document.createElement("div");
+        next.classList.add("swiper-button-next");
+        next.classList.add("text-white", "bg-dark-50", "rounded-full", "w-10", "h-10", "-me-5");
+        const prev = document.createElement("div");
+        prev.classList.add("text-white", "bg-dark-50", "rounded-full", "w-10", "h-10", "-ms-5");
+        prev.classList.add("swiper-button-prev");
+        data.forEach((item) => {
+          const swiperSlider = document.createElement("div");
+          swiperSlider.classList.add("swiper-slide");
+          const box = document.createElement("div");
+          box.classList.add("relative", "overflow-hidden", "rounded");
+          const img = document.createElement("img");
+          img.src = item.cover.responsive_images.svg;
+          img.srcset = getImageWidth(item.cover.responsive_images.urls);
+          img.classList.add("rounded");
+          const cover = document.createElement("div");
+          cover.classList.add("bg-dark-100", "absolute", "top-0", "right-0", "left-0", "bottom-0", "z-20", "bg-opacity-45");
+          const freeContainer = document.createElement("div");
+          freeContainer.classList.add(
+            "bg-dark-50",
+            "absolute",
+            "top-2",
+            "right-2",
+            "z-20",
+            "py-1",
+            "px-2",
+            "w-fit",
+            "text-sm",
+            "text-green-n-300",
+            "shadow",
+            "rounded-full",
+            "flex",
+            "gap-1.5",
+            "items-center"
+          );
+          const freeTitle = document.createElement("span");
+          freeTitle.textContent = "رایگان";
+          const freeIcon = document.createElement("i");
+          freeIcon.classList.add("fa-solid", "fa-film");
+          freeContainer.appendChild(freeIcon);
+          freeContainer.appendChild(freeTitle);
+          box.appendChild(cover);
+          box.appendChild(img);
+          box.appendChild(freeContainer);
+          swiperSlider.appendChild(box);
+          freeMovieContainer.appendChild(swiperSlider);
+        });
+        freeMovieContainer.parentElement.appendChild(next);
+        freeMovieContainer.parentElement.appendChild(prev);
+
+        setTimeout(() => {
+          var swiper = new Swiper(".free_movies", {
+            spaceBetween: 30,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+              0: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+              1024: {
+                slidesPerView: 6,
+                spaceBetween: 50,
+              },
+            },
+          });
+        }, 600);
+      }
+
+      function createCenema(data) {
+        const cenemaContainer = document.querySelector(".cenema");
+        data.forEach((item) => {
+          const box = document.createElement("div");
+          box.classList.add("md:w-5/12", "bg-white", "bg-opacity-10", "rounded", "p-2", "flex", "gap-4", "border", "border-white");
+          const img = document.createElement("img");
+          img.src = item.cover.responsive_images.svg;
+          img.srcset = getImageWidth(item.cover.responsive_images.urls);
+          img.classList.add("w-6/12", "rounded");
+          const details = document.createElement("div");
+          details.classList.add("flex", "flex-col");
+          const title = document.createElement("h3");
+          title.textContent = item.title;
+          const director = document.createElement("h3");
+          director.textContent = "کارگردان: " + item.director.name + item.director.last_name;
+          director.classList.add("text-sm", "text-font-100", "mt-5");
+          const ul = document.createElement("ul");
+          ul.classList.add("mt-5", "text-font-100", "flex", "gap-2");
+          item.categories.forEach((category) => {
+            const li = document.createElement("li");
+            li.textContent = category.title;
+            li.classList.add("bg-dark-100", "bg-opacity-40", "px-2", "w-fit", "p-1", "rounded-full", "text-small");
+            ul.appendChild(li);
+          });
+          const button = document.createElement("button");
+          button.textContent = "خرید بلیت";
+          button.classList.add("border", "border-white", "py-2", "mt-10", "w-4/12", "rounded", "hover:bg-dark-100", "text-sm");
+          details.appendChild(title);
+          details.appendChild(director);
+          details.appendChild(ul);
+          details.appendChild(button);
+          box.appendChild(img);
+          box.appendChild(details);
+          cenemaContainer.appendChild(box);
+        });
+      }
+
+      const faqItems = document.querySelectorAll("#faqItems div");
+      faqItems.forEach((item) => {
+        let isOpen = false;
+        item.addEventListener("click", function () {
+          isOpen = !isOpen;
+          const iElement = item.querySelector("i");
+          if (isOpen) {
+            iElement.classList.remove("rotate-45");
+            item.querySelector("h1").classList.add("text-orange-n-100");
+          } else {
+            iElement.classList.add("rotate-45");
+            item.querySelector("h1").classList.remove("text-orange-n-100");
+          }
+          const dataId = iElement.getAttribute("data-id");
+          const pElement = item.querySelector(`p[data-p="${dataId}"]`);
+          if (pElement && isOpen) {
+            pElement.classList.remove("h-0", "opacity-0", "hidden");
+          }
+          if (pElement && !isOpen) pElement.classList.add("h-0", "opacity-0", "hidden");
+        });
+      });
+    </script>
+  </body>
+</html>

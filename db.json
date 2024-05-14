@@ -1,0 +1,142 @@
+{
+  "slider": [
+    {
+      "id": 1,
+      "src": "https://static.cdn.asset.filimo.com/ct/0ap9o_mobile_1_v1.jpeg?width=960&quality=85&secret=lLHJhQvuLXFv8CIgpxcyDg"
+    },
+    {
+      "id": 2,
+      "src": "https://static.cdn.asset.filimo.com/ct/au4kp_mobile_1_v1.jpeg?width=960&quality=85&secret=6SJecwWeF61FGx2XIGySmw"
+    },
+    {
+      "id": 3,
+      "src": "https://static.cdn.asset.filimo.com/ct/lm1c8_mobile_1_v1.jpeg?width=960&quality=85&secret=SxAwzhW4Jy15b5_x5uOzww"
+    },
+    {
+      "id": 4,
+      "src": "https://static.cdn.asset.filimo.com/ct/k2sj6_mobile_1_v1.jpeg?width=960&quality=85&secret=gaLUq4Cl8wsWjT_9WkxzSg"
+    },
+    {
+      "id": 5,
+      "src": "https://static.cdn.asset.filimo.com/ct/uxh29_mobile_1_v1.jpeg?width=960&quality=85&secret=fvl0nTMQemAhSvbUQQThzQ"
+    },
+    {
+      "id": 6,
+      "src": "https://static.cdn.asset.filimo.com/ct/9sk2i_mobile_1_v1.jpeg?width=960&quality=85&secret=utdHYNDxtSmsmMi8bdkUqA"
+    },
+    {
+      "id": 7,
+      "src": "https://static.cdn.asset.filimo.com/ct/6tdlb_mobile_1_v3.jpeg?width=960&quality=85&secret=EmJdzGylRlLXGfuri1lSqw"
+    }
+  ],
+  "serial": [
+    {
+      "id": 1,
+      "src": "https://static.cdn.asset.filimo.com/flmt/mov_146778_157746.jpg?width=165&quality=85&secret=9DBU_gjErvZnE-y_EkhyNA"
+    },
+    {
+      "id": 2,
+      "src": "https://static.cdn.asset.filimo.com/flmt/mov_146867_157817.jpg?width=165&quality=85&secret=I1wfT58T2C9yYgRoxGdA5Q"
+    },
+    {
+      "id": 3,
+      "src": "https://static.cdn.asset.filimo.com/flmt/mov_146870_157857.jpg?width=165&quality=85&secret=8T5jN1nlWdkC3UPQ0TUKVQ"
+    },
+    {
+      "id": 4,
+      "src": "https://static.cdn.asset.filimo.com/flmt/mov_145333_157677-b.jpg?width=165&quality=85&secret=vrP9pD_Lca_TqypIJ2lygQ"
+    },
+    {
+      "id": 5,
+      "src": "https://static.cdn.asset.filimo.com/flmt/mov_146774_157739.jpg?width=165&quality=85&secret=PpBqr5OEVQEnazokkUV6RQ"
+    },
+    {
+      "id":6,
+      "src":"https://static.cdn.asset.filimo.com/flmt/mov_146924_157960-b.jpg?width=165&quality=85&secret=A-KbgmVAbLctBsu-3M6-FQ"
+    }
+  ],
+  "movies":[
+    {
+        "id":1,
+        "src":"https://static.cdn.asset.filimo.com/flmt/mov_145552_153461.jpg?width=165&quality=85&secret=qy-6oThpNjTpTMl3bESztA"
+    },
+    {
+        "id":2,
+        "src":"https://static.cdn.asset.filimo.com/flmt/mov_146817_156853.jpg?width=165&quality=85&secret=-W5qNVJzC8BKx_5Z731PTw"
+    },
+    {
+        "id":3,
+        "src":"https://static.cdn.asset.filimo.com/flmt/mov_145103_152533.jpg?width=165&quality=85&secret=G95_wAj3uUVsDAveZMBp3w"
+    },
+    {
+        "id":4,
+        "src":"https://static.cdn.asset.filimo.com/flmt/mov_144197_152428.jpg?width=165&quality=85&secret=_h06YbaofoWO6ivilAXshQ"
+    },
+    {
+        "id":5,
+        "src":"https://static.cdn.asset.filimo.com/flmt/mov_145544_153457.jpg?width=165&quality=85&secret=ca2lkwGkZ5rLY-1LPHZcsA"
+    },
+    {
+      "id":6,
+      "src":"https://static.cdn.asset.filimo.com/flmt/mov_145651_153960-b.jpg?width=165&quality=85&secret=L_gsKmY1sDILb7hW4zrFQg"
+    }
+  ],
+  "free":[
+    {
+        "id":1,
+        "src":"https://static.cdn.asset.filimo.com/flmt/mov_srl_11933_1-b.jpg?width=165&quality=85&secret=TTVEtvEcur7pOH0IgDJRhw"
+    },
+    {
+        "id":2,
+        "src":"https://static.cdn.asset.filimo.com/flmt/mov_639_995-b.jpg?width=165&quality=85&secret=U80oEojsjv7n8SfJm-7rMQ"
+    },
+    {
+        "id":3,
+        "src":"https://static.cdn.asset.filimo.com/flmt/mov_srl_41017_932-b.jpg?width=165&quality=85&secret=iCCdAosM5VpIaQc_eFKHAA"
+    },
+    {
+        "id":4,
+        "src":"https://static.cdn.asset.filimo.com/flmt/mov_16676_331-b.jpg?width=165&quality=85&secret=4Q0sOKsHPQtVOTLs4kEvgQ"
+    },
+    {
+        "id":5,
+        "src":"https://static.cdn.asset.filimo.com/flmt/mov_srl_12645_1-b.jpg?width=165&quality=85&secret=T7uBxOIOJlPMJv1V6Ltu7Q"
+    },
+    {
+        "id":6,
+        "src":"https://static.cdn.asset.filimo.com/flmt/mov_17637_916-b.jpg?width=165&quality=85&secret=Y1OuacY3TaQCzdi43YaqzA"
+    },
+    {
+        "id":7,
+        "src":"https://static.cdn.asset.filimo.com/flmt/mov_srl_82690_962-b.jpg?width=165&quality=85&secret=zzPDwF-hvHdgEpy62Nqxog"
+    },
+    {
+        "id":8,
+        "src":"https://static.cdn.asset.filimo.com/flmt/mov_srl_82692_194-b.jpg?width=165&quality=85&secret=XlHlDu3cATALZhmyuhFrXQ"
+    },
+    {
+        "id":9,
+        "src":"https://static.cdn.asset.filimo.com/flmt/mov_37557_65703.jpg?width=165&quality=85&secret=sFeug_xad-7HaV_WbrClGQ"
+    },
+    {
+        "id":10,
+        "src":"https://static.cdn.asset.filimo.com/flmt/mov_srl_26097_1-b.jpg?width=165&quality=85&secret=zKNS5MCO36dP6R20MWmPCA"
+    },
+    {
+        "id":11,
+        "src":"https://static.cdn.asset.filimo.com/flmt/mov_srl_82686_882-b.jpg?width=165&quality=85&secret=1_5lgLmmEx8UpnWb6jHY1A"
+    },
+    {
+        "id":12,
+        "src":"https://static.cdn.asset.filimo.com/flmt/mov_42788_258-b.jpg?width=165&quality=85&secret=DFw_JKP6DOvyxBxiKkpD3Q"
+    },
+    {
+        "id":13,
+        "src":"https://static.cdn.asset.filimo.com/flmt/mov_srl_36180_850-b.jpg?width=165&quality=85&secret=nTriltwu8OPuYXx9nxE6Vg"
+    },
+    {
+        "id":14,
+        "src":"https://static.cdn.asset.filimo.com/flmt/mov_7389_194-b.jpg?width=165&quality=85&secret=9OzwrFV1bRD0UH1xSASxVA"
+    }
+  ]
+}
